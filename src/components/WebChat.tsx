@@ -8,7 +8,7 @@ export default function WebChat() {
     rootWidth: '80%',
     backgroundColor: 'mediumseagreen'
  });
-  const directLine = useMemo(() => createDirectLine({ token: 'F1mceHZdYRs.zMTThcDoFRJ6WzQ97xyL_R2u9ObTfKGymdaotQYcDgA' }), []);
+  const directLine = useMemo(() => createDirectLine({ token: process.env.REACT_APP_WEBCHAT_TOKEN }), []);
 
   return <ReactWebChat directLine={directLine} styleSet={styleSet} userID="1" className="bot" />;
 };
