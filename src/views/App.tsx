@@ -1,3 +1,4 @@
+import FloatingActionButton from '../components/FloatingActionButton';
 import WebChat from '../components/WebChat';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
         </a>
       </header>
         <WebChat/>
+        <FloatingActionButton/>
     </div>
   );
 }

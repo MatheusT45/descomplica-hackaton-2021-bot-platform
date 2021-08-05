@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import ReactWebChat, { createDirectLine, createStyleSet } from 'botframework-webchat';
-import './WebChat.css';
+import './index.css';
 
 export default function WebChat() {
   const styleSet: any = createStyleSet({
