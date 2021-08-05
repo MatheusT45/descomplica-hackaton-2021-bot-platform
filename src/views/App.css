@@ -1,19 +1,28 @@
 .App {
+  background-color: #282c34;
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #202329;
 }
 
 .App-link {
   color: #33d624;
   text-decoration: none;
+}
+
+.bot {
+  margin-top: 40px;
+  min-width: 400px;
+  width: 40%;
+  min-height: 500px;
 }
