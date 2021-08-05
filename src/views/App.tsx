@@ -1,8 +1,15 @@
 import FloatingActionButton from '../components/FloatingActionButton';
+import { useState } from 'react';
 import WebChat from '../components/WebChat';
 import './App.css';
 
 function App() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
+  const handleFabClick = () => {
+    setIsChatOpen(!isChatOpen);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +22,10 @@ function App() {
           Olá! Da uma olhada no nosso robozinho ai!
         </a>
       </header>
-        <WebChat/>
-        <FloatingActionButton/>
+      <div className={isChatOpen ? '' : 'hidden'}>
+        <WebChat />
+      </div>
+        <FloatingActionButton onClick={handleFabClick}/>
     </div>
   );
 }

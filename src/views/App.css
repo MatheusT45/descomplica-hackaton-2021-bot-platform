@@ -19,3 +19,7 @@
   color: #33d624;
   text-decoration: none;
 }
+
+.hidden {
+  display: none;
+}
