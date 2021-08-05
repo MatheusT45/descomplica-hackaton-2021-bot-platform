@@ -1,3 +1,4 @@
+import WebChat from '../components/WebChat';
 import './App.css';
 
 function App() {
@@ -13,11 +14,7 @@ function App() {
           Olá! Da uma olhada no nosso robozinho ai!
         </a>
       </header>
-      <iframe
-          title="bot"
-          className="bot"
-          src='https://webchat.botframework.com/embed/descomplica?s=F1mceHZdYRs.zMTThcDoFRJ6WzQ97xyL_R2u9ObTfKGymdaotQYcDgA'
-        />
+        <WebChat/>
     </div>
   );
 }
