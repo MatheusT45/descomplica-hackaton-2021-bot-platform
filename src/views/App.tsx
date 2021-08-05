@@ -22,7 +22,7 @@ function App() {
           Olá! Da uma olhada no nosso robozinho ai!
         </a>
       </header>
-      <div className={isChatOpen ? '' : 'hidden'}>
+      <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
         <WebChat />
       </div>
         <FloatingActionButton onClick={handleFabClick}/>
