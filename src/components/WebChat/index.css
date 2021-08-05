@@ -1,5 +1,9 @@
 .bot {
+  float: right;
   margin: 20px;
   min-height: 500px;
   max-height: 500px;
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
 }

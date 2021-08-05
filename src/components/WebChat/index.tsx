@@ -4,8 +4,8 @@ import './index.css';
 
 export default function WebChat() {
   const styleSet: any = createStyleSet({
-    rootHeight: '80%',
-    rootWidth: '97%',
+    rootHeight: '40%',
+    rootWidth: '30%',
     backgroundColor: 'mediumseagreen'
  });
   const directLine = useMemo(() => createDirectLine({ token: process.env.REACT_APP_WEBCHAT_TOKEN }), []);
