@@ -21,6 +21,9 @@
 .without-image {
   border: 2px solid green;
   background-color: rgb(34, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
