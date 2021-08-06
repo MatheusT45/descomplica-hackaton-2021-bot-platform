@@ -1,8 +1,12 @@
 import './index.css';
+import { useAtom } from 'jotai'
+import { answersAtom } from '../../../answers-atom';
 
 function PersonaSelectAnswer() {
+  const [answers, setAnswers] = useAtom(answersAtom);
+
   const handleAnswer = (answer: number) => {
-    console.log(answer);
+    setAnswers({ ...answers, persona: answer });
   }
 
   return (
@@ -18,4 +22,5 @@ function PersonaSelectAnswer() {
     </div>
   );
 }
+
 export default PersonaSelectAnswer;
