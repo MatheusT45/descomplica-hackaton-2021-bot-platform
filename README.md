@@ -4,9 +4,14 @@ This project is a platform for testing your skills/personality and get available
 
 For the bot to run, you will need to add the value on the env variable `REACT_APP_WEBCHAT_TOKEN` if you need a valid token to test the bot, please reach out to @felipemangalo.
 
+## Commands
+
+### Install dependencies
+`yarn`
+
 ### Running locally:
 `yarn start`
 
-### Public environmennt
+# Public environmennt
 The app is hosted on heroku with CD/CI pipelines:
 https://descomplica-hackaton-2021-bot.herokuapp.com/
