@@ -1,26 +1,31 @@
-.persona-select {
+.select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.persona-row {
+.row {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.persona {
+.option {
   width: 200px;
   height: 160px;
   cursor: pointer;
-  border: 2px solid green;
-  background-color: rgb(34, 34, 34);
   border-radius: 5%;
   vertical-align: middle;
   text-align: center;
 }
-.persona > img {
+
+.without-image {
+  border: 2px solid green;
+  background-color: rgb(34, 34, 34);
+}
+
+img {
+  cursor: pointer;
   max-width: 300px;
   max-height: 400px;
 }
