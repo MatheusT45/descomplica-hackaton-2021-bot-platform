@@ -1,0 +1,16 @@
+.persona-select {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.persona {
+  margin: 50px;
+  width: 100%;
+  flex-basis: 42%;
+  border: 2px solid gray;
+  background-color: darkred;
+}
+
+.persona:nth-child(3), .persona:nth-child(4) {
+  margin-top: 40px;
+}

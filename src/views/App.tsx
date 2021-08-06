@@ -23,9 +23,13 @@ function App() {
           Olá! Dá uma olhada no nosso robozinho ai!
         </a>
       </header>
-      <Question/>
+      <Question
+        title="E aí, Pronto pra começar?"
+        subtitle="Como você se identifica?"
+        personaSelect={true}
+      />
       <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
-        <WebChat />
+        <WebChat/>
       </div>
       <FloatingActionButton onClick={handleFabClick}/>
     </div>
