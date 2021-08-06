@@ -1,0 +1,24 @@
+.yes-no-answer {
+  display: flex;
+  justify-content: center;
+}
+
+.yes-no-answer > span {
+  padding: 20px;
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.yes-no-answer > span:hover {
+  background-color: lightgray;
+}
+
+.yes-answer {
+  color: green;
+}
+
+.no-answer {
+  color: red;
+  border-left: 2px solid #282c34;
+}
