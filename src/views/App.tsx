@@ -2,6 +2,7 @@ import FloatingActionButton from '../components/FloatingActionButton';
 import { useState } from 'react';
 import WebChat from '../components/WebChat';
 import './App.css';
+import Question from '../components/Question';
 
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -19,13 +20,14 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Olá! Da uma olhada no nosso robozinho ai!
+          Olá! Dá uma olhada no nosso robozinho ai!
         </a>
       </header>
+      <Question/>
       <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
         <WebChat />
       </div>
-        <FloatingActionButton onClick={handleFabClick}/>
+      <FloatingActionButton onClick={handleFabClick}/>
     </div>
   );
 }
