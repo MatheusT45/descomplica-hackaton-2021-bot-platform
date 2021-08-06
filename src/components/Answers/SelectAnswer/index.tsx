@@ -22,12 +22,12 @@ function SelectAnswer() {
         <span 
           className={`option ${hasImage() ? '' : 'without-image'}`}
           onClick={() => handleAnswer(answers[count].options[0])}>
-            { hasImage() ? <img alt={answers[count].labels[0]} src={answers[count].images[0]}/> : answers[count].labels[0]}
+            { hasImage() ? <img alt={answers[count].labels[0]} src={answers[count].images[0]}/> : <p>{answers[count].labels[0]}</p>}
         </span>
         <span
           className={`option ${hasImage() ? '' : 'without-image'}`}
           onClick={() => handleAnswer(answers[count].options[1])}>
-          { hasImage() ? <img alt={answers[count].labels[1]} src={answers[count].images[1]}/> : answers[count].labels[1]}
+          { hasImage() ? <img alt={answers[count].labels[1]} src={answers[count].images[1]}/> : <p>{answers[count].labels[1]}</p>}
         </span>
       </div>
       <div className="row">
@@ -35,14 +35,14 @@ function SelectAnswer() {
           <span
             className={`option ${hasImage() ? '' : 'without-image'}`}
             onClick={() => handleAnswer(answers[count].options[2])}>
-            { hasImage() ? <img alt={answers[count].labels[2]} src={answers[count].images[2]}/> : answers[count].labels[2]}
+            { hasImage() ? <img alt={answers[count].labels[2]} src={answers[count].images[2]}/> : <p>{answers[count].labels[2]}</p>}
           </span>
         }
         {answers[count].options[3] &&
           <span 
             className={`option ${hasImage() ? '' : 'without-image'}`}
             onClick={() => handleAnswer(answers[count].options[3])}>
-            { hasImage() ? <img alt={answers[count].labels[3]} src={answers[count].images[3]}/> : answers[count].labels[3]}
+            { hasImage() ? <img alt={answers[count].labels[3]} src={answers[count].images[3]}/> : <p>{answers[count].labels[3]}</p>}
           </span>
         }
       </div>
