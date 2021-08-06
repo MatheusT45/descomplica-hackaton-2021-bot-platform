@@ -141,6 +141,33 @@ export const answersAtom = atom<DefaultQuestionType[]>([
       personalityTrait: ['T', 'F'],
       answer: undefined,
     },
+    {
+      questionTitle: 'Em uma pesquisa, perguntou-se a um grupo de pessoas o seguinte: “você está feliz com o seu trabalho atual?”. Foram admitidos como resposta a esse questionamento apenas “sim” ou “não”, e cada entrevistado emitiu somente uma única resposta. Verificou-se que, no conjunto de respostas obtidas, a quantidade de respostas “sim” foi igual a 50% da quantidade de respostas “não”. Nessa situação, conclui-se que a quantidade de respostas “não” foi superior a 60% do total de respostas obtidas.',
+      questionSubtitle: '',
+      options: ['1', '2'],
+      labels: ['Certo', 'Falso'],
+      images: [],
+      personalityTrait: [],
+      answer: undefined,
+    },
+    {
+      questionTitle: 'Se pudesse escolher, você passaria sua vida na floresta ou programando robôs?',
+      questionSubtitle: '',
+      options: ['1', '2'],
+      labels: ['Sendo um Elfo', 'Programando robôs'],
+      images: [],
+      personalityTrait: [],
+      answer: undefined,
+    },
+    {
+      questionTitle: 'Você se vê como Van Gogh ou Einstein?',
+      questionSubtitle: '',
+      options: ['1', '2'],
+      labels: ['Vang Gogh', 'Einstein'],
+      images: [],
+      personalityTrait: [],
+      answer: undefined,
+    },
   ]
 );
 
