@@ -1,8 +1,8 @@
-import FloatingActionButton from '../components/FloatingActionButton';
+import './App.css';
 import { useState } from 'react';
 import WebChat from '../components/WebChat';
-import './App.css';
 import Question from '../components/Question';
+import FloatingActionButton from '../components/FloatingActionButton';
 
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -27,6 +27,7 @@ function App() {
         title="E aí, Pronto pra começar?"
         subtitle="Como você se identifica?"
         personaSelect={true}
+        // yesAndNo={true}
       />
       <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
         <WebChat/>

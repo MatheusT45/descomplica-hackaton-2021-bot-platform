@@ -1,16 +1,19 @@
 .persona-select {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.persona-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .persona {
-  margin: 50px;
-  width: 100%;
-  flex-basis: 42%;
+  width: 160px;
+  height: 240px;
+  cursor: pointer;
   border: 2px solid gray;
   background-color: darkred;
-}
-
-.persona:nth-child(3), .persona:nth-child(4) {
-  margin-top: 40px;
 }
