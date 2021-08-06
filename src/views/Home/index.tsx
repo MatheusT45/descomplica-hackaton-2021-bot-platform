@@ -27,7 +27,7 @@ function Home() {
         <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
           <WebChat/>
         </div>
-        <FloatingActionButton onClick={handleFabClick}/>
+        <FloatingActionButton onClick={handleFabClick} isChatOpen={isChatOpen} />
     </div>
   );
 }
