@@ -20,7 +20,7 @@ function Home() {
   const interactionToShow = () => {
     if (!answers.persona.answer) return answers.persona;
     if (!!answers.persona.answer && answers.yesOrNo.answer === undefined) return answers.yesOrNo;
-    return {questionTitle: '', questionSubtitle: ''};
+    return { questionTitle: '', questionSubtitle: '' };
   }
 
   const handleShowPersona = () => !answers.persona.answer;

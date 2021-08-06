@@ -1,14 +1,22 @@
 import { atom } from 'jotai';
 
-export type DefaultAnswerType = {
+export type DefaultQuestionType = {
   questionTitle: string;
   questionSubtitle: string;
+}
+
+export type PersonaAnswerType = DefaultQuestionType & {
   answer?: number;
 }
 
+export type YesOrNoAnswerType = DefaultQuestionType & {
+  answer?: boolean;
+}
+
+
 export type AnswersType = {
-  persona: DefaultAnswerType;
-  yesOrNo: DefaultAnswerType;
+  persona: PersonaAnswerType;
+  yesOrNo: YesOrNoAnswerType;
 }
 
 export const answersAtom = atom<AnswersType>(
