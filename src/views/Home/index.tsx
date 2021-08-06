@@ -9,7 +9,7 @@ import { answersAtom, answersCountAtom } from '../../answers-atom';
 
 function Home() {
   const [answers] = useAtom(answersAtom);
-  const [count, setCount] = useAtom(answersCountAtom);
+  const [count] = useAtom(answersCountAtom);
 
   const [isChatOpen, setIsChatOpen] = useState(false);
 
