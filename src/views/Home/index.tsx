@@ -5,37 +5,25 @@ import Question from '../../components/Question';
 import FloatingActionButton from '../../components/FloatingActionButton';
 import Interaction from '../../components/Interaction';
 import { useAtom } from 'jotai'
-import { answersAtom } from '../../answers-atom';
+import { answersAtom, answersCountAtom } from '../../answers-atom';
 
 function Home() {
   const [answers] = useAtom(answersAtom);
+  const [count, setCount] = useAtom(answersCountAtom);
 
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const handleFabClick = () => {
-    console.log(answers);
     setIsChatOpen(!isChatOpen);
   }
-
-  const interactionToShow = () => {
-    if (!answers.persona.answer) return answers.persona;
-    if (!!answers.persona.answer && answers.yesOrNo.answer === undefined) return answers.yesOrNo;
-    return { questionTitle: '', questionSubtitle: '' };
-  }
-
-  const handleShowPersona = () => !answers.persona.answer;
-  const handleShowYesAndNo = () => !!answers.persona.answer && answers.yesOrNo.answer === undefined;
 
   return (
     <div>
       <Question
-        title={interactionToShow().questionTitle}
-        subtitle={interactionToShow().questionSubtitle}
+        title={answers[count].questionTitle}
+        subtitle={answers[count].questionSubtitle}
       />
-      <Interaction 
-        shouldShowPersona={handleShowPersona()}
-        shouldShowYesAndNo={handleShowYesAndNo()}
-      />
+      <Interaction/>
         <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
           <WebChat/>
         </div>

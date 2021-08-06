@@ -1,12 +1,10 @@
 import './index.css';
-import PersonaSelectAnswer from '../../components/Answers/PersonaSelectAnswer';
-import YesNoAnswer from '../../components/Answers/YesNoAnswer';
+import SelectAnswer from '../Answers/SelectAnswer';
 
-function Interaction(props: any) {
+function Interaction() {
   return (
     <div className="interaction-block">
-      { props.shouldShowPersona && <PersonaSelectAnswer/> }
-      { props.shouldShowYesAndNo && <YesNoAnswer yesAnswer="Sim!" noAnswer="Sim vermelho"/> }
+      <SelectAnswer/>
     </div>
   );
 }
