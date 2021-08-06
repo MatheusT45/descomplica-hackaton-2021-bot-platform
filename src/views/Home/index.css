@@ -9,3 +9,11 @@
   opacity: 1;
   transition: opacity 0.2s linear;
 }
+
+.home {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 80vh;
+  background-color: white;
+  border-radius: 5%;
+}

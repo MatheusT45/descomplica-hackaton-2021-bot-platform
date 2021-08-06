@@ -18,7 +18,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="home">
       <Question
         title={answers[count].questionTitle}
         subtitle={answers[count].questionSubtitle}

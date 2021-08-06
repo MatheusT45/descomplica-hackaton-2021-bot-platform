@@ -11,11 +11,14 @@
 }
 
 .persona {
-  width: 160px;
-  height: 240px;
+  width: 200px;
+  height: 160px;
   cursor: pointer;
-  border: 2px solid gray;
-  background-color: darkred;
+  border: 2px solid green;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5%;
+  vertical-align: middle;
+  text-align: center;
 }
 .persona > img {
   max-width: 300px;
