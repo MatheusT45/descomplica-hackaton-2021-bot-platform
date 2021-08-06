@@ -5,14 +5,18 @@ import { answersAtom } from '../../../answers-atom';
 function YesNoAnswer(props: any) {
   const [answers, setAnswers] = useAtom(answersAtom);
 
-  const handleAnswer = (answer: boolean) => {
-    setAnswers({ ...answers, yesOrNo: answer });
+  const handleAnswer = (answer: number) => {
+    setAnswers({ ...answers, yesOrNo: {
+      ...answers.persona,
+      answer
+    }
+  });
   }
 
   return (
     <div className="yes-no-answer">
-      <span className="yes-answer" onClick={() => handleAnswer(true)}>{props.yesAnswer}</span>
-      <span className="no-answer" onClick={() => handleAnswer(false)}>{props.noAnswer}</span>
+      <span className="yes-answer" onClick={() => handleAnswer(1)}>{props.yesAnswer}</span>
+      <span className="no-answer" onClick={() => handleAnswer(0)}>{props.noAnswer}</span>
     </div>
   );
 }

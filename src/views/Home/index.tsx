@@ -17,13 +17,25 @@ function Home() {
     setIsChatOpen(!isChatOpen);
   }
 
+  const interactionToShow = () => {
+    if (!answers.persona.answer) return answers.persona;
+    if (!!answers.persona.answer && answers.yesOrNo.answer === undefined) return answers.yesOrNo;
+    return {questionTitle: '', questionSubtitle: ''};
+  }
+
+  const handleShowPersona = () => !answers.persona.answer;
+  const handleShowYesAndNo = () => !!answers.persona.answer && answers.yesOrNo.answer === undefined;
+
   return (
     <div>
       <Question
-        title="E aí, Pronto pra começar?"
-        subtitle="Como você se identifica?"
+        title={interactionToShow().questionTitle}
+        subtitle={interactionToShow().questionSubtitle}
       />
-      <Interaction/>
+      <Interaction 
+        shouldShowPersona={handleShowPersona()}
+        shouldShowYesAndNo={handleShowYesAndNo()}
+      />
         <div className={isChatOpen ? 'chat-visible' : 'chat-hidden'}>
           <WebChat/>
         </div>

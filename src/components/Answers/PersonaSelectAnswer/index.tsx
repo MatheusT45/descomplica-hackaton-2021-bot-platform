@@ -6,7 +6,11 @@ function PersonaSelectAnswer() {
   const [answers, setAnswers] = useAtom(answersAtom);
 
   const handleAnswer = (answer: number) => {
-    setAnswers({ ...answers, persona: answer });
+    setAnswers({ ...answers, persona: {
+        ...answers.persona,
+        answer
+      }
+    });
   }
 
   return (
